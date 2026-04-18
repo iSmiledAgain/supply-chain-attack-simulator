@@ -1,0 +1,42 @@
+{
+  "name": "Global-Banking-System",
+  "dependencies": [
+    {
+      "name": "Auth-Service",
+      "dependencies": [
+        {
+          "name": "JWT-Handler",
+          "dependencies": [
+            { "name": "Crypto-Lib", "dependencies": [] },
+            { "name": "utils-string-formatter", "dependencies": [] }
+          ]
+        },
+        { "name": "Session-Manager", "dependencies": [] }
+      ]
+    },
+    {
+      "name": "Transaction-Engine",
+      "dependencies": [
+        {
+          "name": "Ledger-Core",
+          "dependencies": [
+            { "name": "SQL-Driver", "dependencies": [] },
+            { "name": "Data-Validator", "dependencies": [
+                { "name": "utils-string-formatter", "dependencies": [] }
+            ]}
+          ]
+        },
+        { "name": "Currency-Converter", "dependencies": [] }
+      ]
+    },
+    {
+      "name": "Reporting-Dashboard",
+      "dependencies": [
+        { "name": "Chart-JS-Wrapper", "dependencies": [] },
+        { "name": "Export-PDF-Lib", "dependencies": [
+            { "name": "utils-string-formatter", "dependencies": [] }
+        ]}
+      ]
+    }
+  ]
+}

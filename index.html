@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Supply Chain Attack Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <aside class="sidebar">
+        <div class="sidebar-title">Supply Chain Sim</div>
+        <p class="description">Select a dependency to compromise:</p>
+
+        <div id="package-list"></div>
+
+        <button class="btn-inject" id="inject-btn" onclick="injectAttack()" disabled>
+            &#9654;&nbsp; Inject Attack
+        </button>
+        <button class="btn-reset" onclick="doReset()">&#8635;&nbsp; Reset</button>
+
+        <div class="cb-row">
+            <span>Colorblind mode</span>
+            <label class="switch">
+                <input type="checkbox" id="cb-toggle" onchange="toggleCB()">
+                <span class="switch-track"></span>
+            </label>
+        </div>
+
+        <div class="legend-box">
+            <div class="legend-label">Legend</div>
+            <div id="legend-items"></div>
+        </div>
+
+        <div class="status-panel">
+            <h3>System Status</h3>
+            <div id="status-text" class="status-ok">Loading...</div>
+        </div>
+    </aside>
+
+    <main class="viewport">
+        <header>
+            <h1>Supply Chain Attack Simulator</h1>
+        </header>
+        <div id="graph"></div>
+    </main>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
