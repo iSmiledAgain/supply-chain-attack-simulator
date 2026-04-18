@@ -42,7 +42,7 @@ supply-chain-simulator/
 ### Option 1 - Python (simplest, no install needed)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/supply-chain-simulator.git
+git clone https://github.com/iSmiledAgain/supply-chain-simulator.git
 cd supply-chain-simulator
 python3 -m http.server 8080
 ```
@@ -52,7 +52,7 @@ Then open [http://localhost:8080](http://localhost:8080) in your browser.
 ### Option 2 - Node.js / npx
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/supply-chain-simulator.git
+git clone https://github.com/iSmiledAgain/supply-chain-simulator.git
 cd supply-chain-simulator
 npx serve .
 ```
